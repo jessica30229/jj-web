@@ -11,8 +11,8 @@ function App() {
     <div>
       <Navbar className="nav" />
       {/* <div className="container"> */}
+      <Route path="/jj-web" element={<Works />} />
       <Routes>
-        <Route path="/jj-web" element={<Works />} />
         <Route path="/jj-web/about" element={<About />} />
         <Route path="/jj-web/works" element={<Works />} />
         <Route path="/jj-web/works/1" element={<Work1 />} />

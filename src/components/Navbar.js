@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <nav className="navigation">
       <div className="stick">
-        <a href="/about" className="brand-name">
+        <Link href="/jj-web/works" className="brand-name">
           {isNavExpanded && isLinked ? (
             <div
               style={{
@@ -29,7 +29,7 @@ export default function Navbar() {
           ) : (
             <img src={logo} alt="" />
           )}
-        </a>
+        </Link>
         <button
           className="hamburger"
           onClick={() => {
@@ -50,7 +50,7 @@ export default function Navbar() {
             <li>
               <Link
                 style={{ textDecoration: "none", color: "black" }}
-                to="/about"
+                to="/jj-web/about"
                 onClick={() => {
                   setIsNavExpanded(!isNavExpanded);
                 }}
@@ -61,7 +61,7 @@ export default function Navbar() {
             <li>
               <Link
                 style={{ textDecoration: "none", color: "black" }}
-                to="/works"
+                to="/jj-web/works"
                 onClick={() => {
                   setIsNavExpanded(!isNavExpanded);
                 }}

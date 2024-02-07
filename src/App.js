@@ -10,13 +10,17 @@ function App() {
   return (
     <div>
       <Navbar className="nav" />
-      <div className="container">
-        <Routes>
-          <Route path="/about" element={<About />} />
-          <Route path="/works" element={<Works />} />
-          <Route path="/works/1" element={<Work1 />} />
-        </Routes>
-      </div>
+      {/* <div className="container"> */}
+      <Routes>
+        {/* <Route path="/jj-web" element={<About />}> */}
+        <Route index element={<Works />} />
+        <Route path="/jj-web/about" element={<About />} />
+        <Route path="/jj-web/works" element={<Works />} />
+        <Route path="/jj-web/works/1" element={<Work1 />} />
+        {/* <Route path="*" element={<NoPage />} /> */}
+        {/* </Route> */}
+      </Routes>
+      {/* </div> */}
     </div>
   );
 }

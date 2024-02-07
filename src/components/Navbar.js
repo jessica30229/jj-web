@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <nav className="navigation">
       <div className="stick">
-        <a href="/works" className="brand-name">
+        <a href="/about" className="brand-name">
           {isNavExpanded && isLinked ? (
             <div
               style={{

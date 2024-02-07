@@ -7,6 +7,7 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   display: flex;
+  font-family: inter;
 }
 
 .stick {
@@ -17,9 +18,10 @@
 }
 
 .inline {
-  height: 60px;
+  /* height: 60px; */
   width: 100%;
   display: inline-block;
+  text-align: right;
 }
 
 .brand-name {
@@ -59,9 +61,14 @@
   width: 30px;
   /* padding: 0.5rem; */
   background: linear-gradient(
-    180deg,
-    rgba(222, 65, 31, 0.2) 0%,
-    rgba(66, 14, 212, 0.2) 100%
+    90deg,
+    #f7cfcf 0%,
+    #f7eade 18%,
+    #fdf9d3 35%,
+    #e8ffe5 50%,
+    #dfe8fb 69%,
+    #f1e5ff 87%,
+    #f5e5ff 99%
   );
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
@@ -86,21 +93,28 @@
     background-color: white;
   }
   .navigation-menu.expanded ul {
-    display: block;
+    display: flex;
+    /* display: block; */
+    height: 100px;
+    /* width: -15%; */
+    float: right;
     z-index: 2000 !important;
+    background-color: white;
   }
   .navigation-menu li {
     text-align: center;
-    padding: 25%;
+    /* padding: 50px; */
+    right: 0;
+    height: 50px;
     margin: 0rem;
   }
-  .navigation-menu li a {
+  .navigation-menu li Link {
     cursor: pointer;
     text-decoration: none;
     width: 100%;
     padding: 0;
   }
-  .navigation-menu li:hover {
+  .navigation-menu li :hover {
     background-color: #eee;
   }
   .hamburger {

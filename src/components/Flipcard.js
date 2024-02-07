@@ -5,19 +5,13 @@ function Flipcard(props) {
     <div className="flip-card">
       <div className="flip-card-inner">
         <div className="flip-card-front">
-          <img
-            src={props.img}
-            alt="Avatar"
-            style={{ width: "300px", height: "200px" }}
-          />
+          <img src={props.img} alt="Avatar" className="imgClasses" />
         </div>
         <div className="flip-card-back">
-          <img
-            src={props.img}
-            alt="Avatar"
-            style={{ width: "300px", height: "200px" }}
-          />
-          <h1>{props.text}</h1>
+          <div className="center">
+            <h1 className="textClasses">{props.title}</h1>
+            <p className="textClasses2">{props.discription}</p>
+          </div>
         </div>
       </div>
     </div>

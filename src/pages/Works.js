@@ -22,7 +22,7 @@ function Works() {
         </section>
       </div>
       <div className="rows">
-        <Link to="/works/1">
+        <Link to="/jj-web/works/1">
           <Flipcard
             title={"Startup Speedup"}
             discription={"a playground for youth to verify dream ideas."}
